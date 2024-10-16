@@ -1,27 +1,65 @@
-# MyAngularCalculator
+# Angular Calculator App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+This is a simple calculator application built using Angular. The calculator supports basic arithmetic operations like addition, subtraction, multiplication, and division.
 
-## Development server
+## Features
+- Basic Arithmetic Operations: `+`, `-`, `*`, `/`
+- Supports number inputs and decimal points
+- Clear (`C`) and delete (`←`) buttons
+- Evaluates expressions safely without using `eval()`
+- Responsive layout with buttons designed to fit properly
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Requirements
 
-## Code scaffolding
+Before you start, ensure you have the following installed:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Node.js**: Download and install from [Node.js website](https://nodejs.org/).
+- **Angular CLI**: If you don't have Angular CLI installed, you can install it globally using:
 
-## Build
+  ```
+  npm install -g @angular/cli
+  ```
+### Installation
+Clone the repository:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+git clone https://github.com/your-repo-url/calculator-app.git
+cd calculator-app
+```
+Install dependencies:
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+npm install
+```
+### Running the Application
 
-## Running end-to-end tests
+To run the application in development mode:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+ng serve
+```
+Open your browser and navigate to http://localhost:4200/. The app will automatically reload if you make any changes to the source files.
 
-## Further help
+### Project Structure
+The main source files for the calculator can be found in the src/app/calculator/ directory. Here's a quick overview of the 
+### important files:  
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+calculator.component.ts: Contains the logic for the calculator, such as handling user input and evaluating expressions. <br>
+calculator.component.html: The template that defines the structure of the calculator's buttons and display.  
+calculator.component.css: Styling for the calculator layout and design.  
+### Usage
+#### Calculator Functionality:  
+C: Clears the entire input.  
+←: Deletes the last entered character.  
+=: Evaluates the current expression.  
+Numbers and Operators: You can input numbers and arithmetic operators (+, -, *, /) for calculations.  
+#### Customization
+You can customize the look and feel of the calculator by editing the calculator.component.css file. Feel free to modify the layout, colors, and button designs as needed.
+
+### Build for Production
+To build the application for production, run:
+```
+ng build
+```
+The build artifacts will be stored in the dist/ directory. Use the --prod flag for a production build.
