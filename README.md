@@ -63,3 +63,6 @@ To build the application for production, run:
 ng build
 ```
 The build artifacts will be stored in the dist/ directory. Use the --prod flag for a production build.
+
+# Challenges Of AI
+One of the biggest challenges i faced was the use of imports and the AIs ability to know whether or not something was able to be used and if another file needed to be modified. However the AI was then able to resolve these issues if i gave it the error message presented to me. 
