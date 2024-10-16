@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  standalone: true,  // Mark this as a standalone component
+  imports: [CalculatorComponent],  // Import the CalculatorComponent here
 })
 export class AppComponent {
-  title = 'my-angular-Calculator';
+  title = 'calculator-app';
 }
